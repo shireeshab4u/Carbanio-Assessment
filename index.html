@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Carbanio Assignment</title>
+	 <link rel="stylesheet" href="style.css">
+	
+  </head>
+  
+  <body>
+   <ul class="nav nav-tabs">
+     <li class="nav-item">
+     <a class="#" ><img class="logo" src="img.png"></a>
+     </li>
+   </ul> 
+   <br>
+   
+   <div> <p class="h6">PLEASE RESPOND TO THE CUSTOMIZED CHEMICAL REQUIREMENT</p></div><br>
+   
+   <div class="container">
+   
+   <div class="table-responsive">
+        <table class="table mb-0">
+          <thead class="thead-light">		 
+            <tr class="t1">
+              <th>Product Details</th>
+              <th>Purity</th>
+              <th>Weight</th>
+              <th>Packs</th>
+              <th>Will you supply this Chemical?</th>          
+            </tr>
+          </thead>
+		  
+		  
+          <tbody class="tb">
+            <tr>
+              <td class="text-bold-500"><p><u>Erioglaucine sodium salt</u><br>CAS No. 19774-82-4</br></p></td>
+              <td>99.99%</td>
+              <td class="text-bold-500">50 kg</td>
+              <td>10</td>
+			  <td>
+			 <b class="button1">
+              <div class="col-md-6 col-sm-12">              
+              <div class="btn-group btn-group-sm" role="group" aria-label="Size Small">
+                <button type="button" id="buttonY1" class="btn btn-outline-primary">Yes</button>
+                <button type="button" id="buttonN1" class="btn btn-outline-primary">No</button>
+              </div>
+            </div> 
+			
+            </td>			
+            </tr>
+			
+			
+            <tr>
+              <tr>
+              <td class="text-bold-500"><p><u>Varenicline Nitraso Impurity</u><br>CAS No. 19774-82-4</br></p></td>
+              <td>98%</td>
+              <td class="text-bold-500">10 kg</td>
+              <td>5</td>
+			  <td>
+			  <b class="button1">
+              <div class="col-md-6 col-sm-12">              
+              <div class="btn-group btn-group-sm" role="group" aria-label="Size Small">
+                <button type="button" id="buttonY2" class="btn btn-outline-primary">Yes</button>
+                <button type="button" id="buttonN2" class="btn btn-outline-primary">No</button>
+              </div>
+            </div> 
+            </td>			
+            </tr>
+			
+			
+             <tr>
+              <tr>
+              <td class="text-bold-500"><p><u>MANGANESE DIOXIDE Extra Pure</u><br>CAS No. 19774-82-4</br></p></td>
+              <td>100%</td>
+              <td class="text-bold-500">100 kg</td>
+              <td>1</td>
+			  <td>
+			  <b class="button1">
+              <div class="col-md-6 col-sm-12">              
+              <div class="btn-group btn-group-sm" role="group" aria-label="Size Small">
+                <button type="button" id="buttonY3" class="btn btn-outline-primary">Yes</button>
+                <button type="button" id="buttonN3" class="btn btn-outline-primary">No</button>
+              </div>
+            </div> 
+            </td>			
+            </tr>
+			
+		  <tr>
+              <tr>
+              <td class="text-bold-500"><p><u>Diethanolamine (For Synthesis)</u><br>CAS No. 19774-82-4</br></p></td>
+              <td>99%</td>
+              <td class="text-bold-500">1 kg</td>
+              <td>3</td>
+			  <td>
+			  <b class="button1">
+              <div class="col-md-6 col-sm-12">              
+              <div class="btn-group btn-group-sm" role="group" aria-label="Size Small">
+                <button type="button" id="buttonY4" class="btn btn-outline-primary">Yes</button>
+                <button type="button" id="buttonN4" class="btn btn-outline-primary">No</button>
+              </div>
+            </div> 
+            </td>			
+            </tr>
+			
+			
+              <tr>
+              <tr>
+              <td class="text-bold-500"><p><u>Cyclohexylamine extrapure AR</u><br>CAS No. 19774-82-4</br></p></td>
+              <td>90%</td>
+              <td class="text-bold-500">3 kg</td>
+              <td>6</td>
+			  <td>
+			  <b class="button1">
+              <div class="col-md-6 col-sm-12">              
+              <div class="btn-group btn-group-sm" role="group" aria-label="Size Small">
+                <button type="button" id="buttonY5" class="btn btn-outline-primary" >Yes</button>
+                <button type="button" id="buttonN5" class="btn btn-outline-primary">No</button>
+              </div>
+            </div> 
+            </td>			
+            </tr>			
+          </tbody>		 
+        </table>
+		<hr>
+		<div class="text-center">
+		<button type="button" class="btn btn-secondary" disabled>SUBMIT</button>
+      <button type="button" class="btn btn-primary" style="display:none">SUBMIT</button>
+    </div>
+      </div>
+	  </div>
+	  
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script>
+	  var item="";
+	   var item1="";
+	  var item2="";
+	  var item3="";
+		var item4="";
+		var item5="";
+		
+		
+	  $(document).ready(function(){
+	 
+  
+   $(".btn-outline-primary").click(function(){
+   
+ 
+   var str=this.id;
+   var count = str.substring(7);
+   
+	var contactbutton="buttonY"+count
+	
+   if(this.id == "buttonY"+count){
+   $("#buttonN"+count).removeClass("active");
+   $(this).addClass("active");
+     item= 'item';
+	
+	
+   }
+   if(this.id == "buttonN"+count){
+   $("#buttonY"+count).removeClass("active");
+   $(this).addClass("active");
+    item= 'item'+count;
+	
+   }
+   if(count =='1'){
+   item1="item1"
+   }
+    if(count =='2'){
+   item2="item2"
+   }
+    if(count =='3'){
+   item3="item3"
+   }
+    if(count =='4'){
+   item4="item4"
+   }
+    if(count =='5'){
+   item5="item5"
+   }
+  
+ if(item1!= "" && item2!= "" && item3!= "" && item4!= "" && item5!= ""){
+
+ $('.btn-secondary').hide();
+ $(".btn-primary").show();
+ }
+	
+  });
+ 
+});
+	  </script>
+  </body>
+</html>
+
+
